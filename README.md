@@ -15,7 +15,7 @@ To investigate the information, this report was about to show the modeling and a
 原始数据来自[Kaggle](https://www.kaggle.com/kamalchouhbi/league-of-legends-match-data-2017#2017clean.csv)，包含2017年英雄联盟所有赛区的职业联赛数据。作为刚开始的尝试，这篇报告主要提取的是韩国赛区（LCK）春季赛和夏季赛的数据，最后提取完的变量信息如下所示，
 
 |Variable Name|Type|Description|
-|....|....|....|
+|----|----|----|
 |split|Binary|The split that a game belongs to (spring or summer).|
 |game|Multi-class|The round in which two teams fight against each other (1,2 or 3). The rule is Best of 3 Games.|
 |side|Binary|The side of the game (red or blue). The situations for teams in opposite sides are not perfectly equal in fact, though Riot tries to balance them.|
@@ -55,6 +55,7 @@ str(DataForWR)
 
 ```r
 summary(DataForWR)
+```
 ```
 split          game         side                      team           fb          fbtime              fd     
 spring:442  Min.   :1.000   Blue:440   Afreeca Freecs     : 93   Min.   :0.0   Min.   : 0.6478   Min.   :0.0  
